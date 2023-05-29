@@ -11,21 +11,24 @@ public class User {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private int id;
+    private Long id;
     private String name;
     private String surname;
 
-    public User(int id, String name, String surname) {
+    public User(long id, String name, String surname) {
         this.id = id;
         this.name = name;
         this.surname = surname;
     }
 
-    public int getId() {
+    public User(){}
+
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
